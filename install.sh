@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt install i3-wm
 apt install i3lock
 apt install i3blocks
