@@ -33,6 +33,7 @@ sudo apt-get install arandr
 sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list"
 apt-get update
 apt-get install arc-theme
+rm -f -v /etc/apt/sources.list.d/arc-theme.list
 
 #install moka icon pack
 add-apt-repository ppa:moka/daily
