@@ -56,3 +56,5 @@ cp -f -v i3blocks.conf ~/.config/i3
 mkdir ~/.config/gtk-3.0
 cp -f -v settings.ini ~/.config/gtk-3.0
 
+#copying gtk-2.0 config file
+cp -f -v .gtkrc-2.0 ~/
