@@ -147,6 +147,7 @@ assign [class="Xfce4-terminal"] $workspace1
 assign [class="Chromium-browser"] $workspace2
 assign [class="Firefox"] $workspace2
 
+assign [class="telegram"] $workspace5
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -214,12 +215,16 @@ bar {
 	}
 }
 
-# Screen Shots
+# screenshot
 #bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 #bindsym Control+Print exec gnome-screenshot -i
+# screenshot
+bindsym Print exec "mkdir -p Pictures/Screenshots && scrot -q 100 Pictures/Screenshots/%Y-%m-%d-%s_screenshot_$wx$h.jpg
 
 #lock the screen
-bindsym $mod+l exec i3lock --color "$bg-color"
+#bindsym $mod+l exec i3lock --color "$bg-color"
+#bindsym mod+l exec sh "~/.config/i3/lock.shi
+bindsym $mod+l exec "$HOME/.config/i3/lock.sh $HOME/Pictures/Icons/lock.png"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume

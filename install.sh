@@ -59,3 +59,23 @@ cp -f -v settings.ini ~/.config/gtk-3.0
 
 #copying gtk-2.0 config file
 cp -f -v .gtkrc-2.0 ~/
+
+cd ../
+
+#copying scripts to their destinattion
+cd scripts
+
+cp -f -v lock.sh ~/.config/i3
+
+cd ../
+
+#copying pictures
+
+cd pictures
+
+mkdir ~/Pictures/Icons
+
+cp -f -v lock.png ~/Pictures/Icons
+
+cd ../
+
