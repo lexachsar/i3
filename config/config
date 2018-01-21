@@ -11,7 +11,7 @@
 
 #setting variables
 #Default terminal
-set $terminal "gnome-terminal -e tmux attach"
+set $terminal "gnome-terminal -e tmux attach --hide-menubar"
 #U can rename workspaces here
 set $workspace1 "1: Terminals"
 set $workspace2 "2: Browsers"
