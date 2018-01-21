@@ -26,7 +26,10 @@ cd ../
 apt install rofi
 
 #install xrandr
-sudo apt-get install arandr
+apt install arandr
+
+#install scrot
+apt install scrot
 
 #APPEARENCE
 #install the arc-theme

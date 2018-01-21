@@ -9,6 +9,23 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#setting variables
+#Default terminal
+set $terminal "gnome-terminal -e tmux attach"
+#U can rename workspaces here
+set $workspace1 "1: Terminals"
+set $workspace2 "2: Browsers"
+set $workspace3 "3: Code"
+set $workspace4 "4: Docs"
+set $workspace5 "5: Chats"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9: Tor"
+set $workspace10 "10: Media"
+
+#####
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -30,7 +47,7 @@ font pango:System San Francisco Display 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec $terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -103,19 +120,6 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-#setting variables
-#U can rename workspaces here
-set $workspace1 "1: Terminals"
-set $workspace2 "2: Browsers"
-set $workspace3 "3: Code"
-set $workspace4 "4: Docs"
-set $workspace5 "5: Chats"
-set $workspace6 "6"
-set $workspace7 "7"
-set $workspace8 "8"
-set $workspace9 "9"
-set $workspace10 "10: Tor"
-
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
@@ -147,13 +151,18 @@ assign [class="Xfce4-terminal"] $workspace1
 assign [class="Chromium-browser"] $workspace2
 assign [class="Firefox"] $workspace2
 
+assign [class="jetbrains-idea-ce"] $workspace3
+
 assign [class="libreoffice"] $workspace4
 assign [class="Evince"] $workspace4
 
 assign [class="telegram"] $workspace5
 assign [class="TelegramDesktop"] $workspace5
 
-assign [class="Tor Browser"] $workspace10
+assign [class="Tor Browser"] $workspace9
+
+assign [class="Parole"] $workspace10
+assign [class="vlc"] $workspace10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -253,10 +262,14 @@ bindsym XF86AudioPrev exec playerctl previous
 
 #autostart applications
 exec firefox
-exec i3-sensible-terminal
+exec $terminal 
 exec megasync
 
 #screen settings
 exec_always xrandr --output VGA-1 --primary --mode 1440x900 --pos 0x0 --rotate normal --output DVI-I-1 --off --output HDMI-1 --off
 
+# The middle button over a titlebar kills the window
+bindsym --release button2 kill
 
+# The right button toggles floating
+bindsym button3 floating toggle
