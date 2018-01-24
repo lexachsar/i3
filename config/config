@@ -155,7 +155,7 @@ assign [class="jetbrains-idea-ce"] $workspace3
 
 assign [class="libreoffice"] $workspace4
 assign [class="Evince"] $workspace4
-assign [clacc="libprs500"] $workspace4
+assign [class="libprs500"] $workspace4
 
 assign [class="telegram"] $workspace5
 assign [class="TelegramDesktop"] $workspace5
