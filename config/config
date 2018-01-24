@@ -160,6 +160,7 @@ assign [class="libprs500"] $workspace4
 
 assign [class="telegram"] $workspace5
 assign [class="TelegramDesktop"] $workspace5
+assign [class="discord"] $workspace5
 
 assign [class="Tor Browser"] $workspace9
 
