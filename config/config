@@ -18,7 +18,7 @@ set $workspace2 "2: Browsers"
 set $workspace3 "3: Code"
 set $workspace4 "4: Docs"
 set $workspace5 "5: Chats"
-set $workspace6 "6"
+set $workspace6 "6: Torrent"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9: Tor"
@@ -161,6 +161,8 @@ assign [class="libprs500"] $workspace4
 assign [class="telegram"] $workspace5
 assign [class="TelegramDesktop"] $workspace5
 assign [class="discord"] $workspace5
+
+assign [class="Transmission-gtk"] $workspace6
 
 assign [class="Tor Browser"] $workspace9
 
