@@ -66,8 +66,11 @@ cp config/config tmp
 echo "#screen settings" >> tmp/config
 echo "exec_always xrandr --output VGA-1 --primary --mode "$a"x"$b" --pos 0x0 --rotate normal --output DVI-I-1 --off --output HDMI-1 --off" >> tmp/config
 
-#theme add
-echo | cat theme.conf >> tmp/config 
+# Theme add
+echo | cat themes/gray-theme.conf >> tmp/config 
+
+# Start rofi
+echo "bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 250 -opacity \"85\" -bw 0 -bc \"$rofi-bg-color\" -bg \"$r    ofi-bg-color\" -fg \"$rofi-text-color\" -hlbg \"$rofi-bg-color\" -hlfg \"#9575cd\" -font \"System San Francisco Display 18\"" >> tmp/config
 
 #copying config files to their destenation places
 #################################################
