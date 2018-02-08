@@ -70,7 +70,7 @@ echo "exec_always xrandr --output VGA-1 --primary --mode "$a"x"$b" --pos 0x0 --r
 echo | cat themes/gray-theme.conf >> tmp/config 
 
 # Start rofi
-echo "bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 250 -opacity \"85\" -bw 0 -bc \"$rofi-bg-color\" -bg \"$r    ofi-bg-color\" -fg \"$rofi-text-color\" -hlbg \"$rofi-bg-color\" -hlfg \"#9575cd\" -font \"System San Francisco Display 18\"" >> tmp/config
+echo "bindsym \$mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 250 -opacity \"85\" -bw 0 -bc \"\$rofi-bg-color\" -bg \"\$rofi-bg-color\" -fg \"\$rofi-text-color\" -hlbg \"\$rofi-bg-color\" -hlfg \"#9575cd\" -font \"System San Francisco Display 18\"" >> tmp/config
 
 #copying config files to their destenation places
 #################################################
