@@ -4,7 +4,7 @@
 
 #setting variables
 #Default terminal
-set $terminal "gnome-terminal -e tmux attach --hide-menubar"
+set $terminal "rxvt -e tmux"
 #U can rename workspaces here
 set $workspace1 "1: Terminals"
 set $workspace2 "2: Browsers"
@@ -119,9 +119,7 @@ bindsym $mod+Shift+8 move container to workspace $worksapce8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
-#Type xprop in the terminal to ger app class
-assign [class="Xfce4-terminal"] $workspace1
-
+#Type xprop in the terminal to get app class
 assign [class="Chromium-browser"] $workspace2
 assign [class="Firefox"] $workspace2
 
@@ -214,6 +212,7 @@ bindsym XF86AudioPrev exec playerctl previous
 exec firefox
 exec $terminal 
 exec megasync
+exec volumeicon
 
 # The middle button over a titlebar kills the window
 bindsym --release button2 kill

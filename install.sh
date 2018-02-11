@@ -4,6 +4,11 @@ apt install i3-wm
 apt install i3lock
 apt install i3blocks
 
+apt install volumeicon-alsa
+mkdir ~/.config/volumeicon
+cp config/volumeicon ~/.config/volumeicon
+
+
 ##############################
 # A directory for temp files #
 ##############################
@@ -13,6 +18,16 @@ mkdir tmp
 ###########################
 # installing dependencies #
 ###########################
+
+#rxvt/installRXVT.sh
+apt -qq --assume-yes install rxvt-unicode
+
+cp -f -v rxvt/.Xresources ~/
+
+git clone https://github.com/lexachsar/Dotfiles tmp/Dotfiles
+
+cp -f -v tmp/Dotfiles/tmux/.tmux.conf ~/
+
 
 #clonning repo with San Francisco fonts
 git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git tmp/YosemiteSanFranciscoFont
