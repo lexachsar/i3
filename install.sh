@@ -1,10 +1,10 @@
 #!/bin/bash
 
-apt install i3-wm
-apt install i3lock
-apt install i3blocks
+apt -qq --assume-yes install i3-wm
+apt -qq --assume-yes install i3lock
+apt -qq --assume-yes install i3blocks
 
-apt install volumeicon-alsa
+apt -qq --assume-yes install volumeicon-alsa
 mkdir ~/.config/volumeicon
 cp config/volumeicon ~/.config/volumeicon
 
@@ -39,25 +39,25 @@ cp -r -v tmp/YosemiteSanFranciscoFont/*.ttf ~/.fonts
 
 
 #install rofi
-apt install rofi
+apt -qq --assume-yes install rofi
 
 #install xrandr
-apt install arandr
+apt -qq --assume-yes install arandr
 
 #install scrot
-apt install scrot
+apt -qq --assume-yes install scrot
 
 #APPEARENCE
 #install the arc-theme
 sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list"
-apt-get update
-apt-get install arc-theme
+apt-get -qq update
+apt-get -qq --assume-yes install arc-theme
 rm -f -v /etc/apt/sources.list.d/arc-theme.list
 
 #install moka icon pack
-add-apt-repository ppa:moka/daily
-apt-get update
-apt-get install moka-icon-theme faba-icon-theme faba-mono-icons
+add-apt-repository --yes ppa:moka/daily
+apt-get -qq update
+apt-get -qq --assume-yes install moka-icon-theme faba-icon-theme faba-mono-icons
 
 ###########################
 # Config files generation #
@@ -71,7 +71,9 @@ cp config/config tmp
 	b=767
 	while [ "$a" -lt "1024" ] && [ "$b" -lt "768" ]; do
 		echo "What is your screen resolution(a x b)?\n"
-	        echo -n "a = "
+	        echo "Samsung SyncMaster 920nw screen resolution is: 1440x900"
+		echo "MacBook air 1.1 screen resolution is 1280x800"
+		echo -n "a = "
 	        read a
 	        echo -n "b = "
 	        read b

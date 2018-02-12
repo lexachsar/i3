@@ -209,6 +209,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #autostart applications
+exec --no-startup-id pulseaudio
+
 exec firefox
 exec $terminal 
 exec megasync

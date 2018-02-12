@@ -42,17 +42,33 @@ URxvt.color0:     #000000
 URxvt.color8:     #44475A
 URxvt.color1:     #FF5555
 URxvt.color9:     #FFB86C
-URxvt.color2:     #50FA7B
+
+! Green color
+URxvt.color2:     #50FA7B 
 URxvt.color10:    #50FA7B
+
+! Yellow
 URxvt.color3:     #E6DB74
 URxvt.color11:    #F1FA8C
+
+! Blue
 URxvt.color4:     #6272A4
 URxvt.color12:    #6272A4
+
+! Purple
 URxvt.color5:     #BD93F9
+
+! Pink
 URxvt.color13:    #FF79C6
+
+! Blue
 URxvt.color6:     #8BE9FD
 URxvt.color14:    #66D9EF
+
+! Gray
 URxvt.color7:     #666666
+
+! White
 URxvt.color15:    #FFFFFF
 
 ! URxvt*colorBD:                        color
