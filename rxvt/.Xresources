@@ -40,7 +40,10 @@ URxvt.foreground: #F8F8F2
 URxvt.background: #282A36
 URxvt.color0:     #000000
 URxvt.color8:     #44475A
+
+! Red color
 URxvt.color1:     #FF5555
+
 URxvt.color9:     #FFB86C
 
 ! Green color
@@ -49,6 +52,7 @@ URxvt.color10:    #50FA7B
 
 ! Yellow
 URxvt.color3:     #E6DB74
+
 URxvt.color11:    #F1FA8C
 
 ! Blue
