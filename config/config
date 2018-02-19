@@ -7,9 +7,9 @@
 set $terminal "rxvt -e tmux"
 #U can rename workspaces here
 set $workspace1 "1: Terminals"
-set $workspace2 "2: Browsers"
-set $workspace3 "3: Code"
-set $workspace4 "4: Docs"
+set $workspace2 "2: Code"
+set $workspace3 "3: Docs"
+set $workspace4 "4: Browsers"
 set $workspace5 "5: Chats"
 set $workspace6 "6: Torrent"
 set $workspace7 "7"
@@ -120,18 +120,18 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 #Type xprop in the terminal to get app class
-assign [class="Chromium-browser"] $workspace2
-assign [class="Firefox"] $workspace2
+assign [class="jetbrains-idea-ce"] $workspace2
 
-assign [class="jetbrains-idea-ce"] $workspace3
+assign [class="libreoffice"] $workspace3
+assign [class="libreoffice-writer"] $workspace3
+assign [class="Soffice"] $workspace3
+assign [class="Evince"] $workspace3
+assign [class="libprs500"] $workspace3
+assign [class="Ristretto"] $workspace3
+assign [class="ristretto"] $workspace3
 
-assign [class="libreoffice"] $workspace4
-assign [class="libreoffice-writer"] $workspace4
-assign [class="Soffice"] $workspace4
-assign [class="Evince"] $workspace4
-assign [class="libprs500"] $workspace4
-assign [class="Ristretto"] $workspace4
-assign [class="ristretto"] $workspace4
+assign [class="Firefox"] $workspace4
+assign [class="Chromium-browser"] $workspace4
 
 assign [class="telegram"] $workspace5
 assign [class="TelegramDesktop"] $workspace5
